@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Stunning Potato</string>
+
+    <!-- Images gallery -->
+    <string name="iv_gallery_desc">Dummy gallery image</string>
+
+    <!-- Command picker activity -->
+    <string name="rec_how_to">To activate Google\'s recognizer say \"Ok potato\".</string>
+
+    <!-- Command views tag -->
+    <string name="tag_btn_command">command</string>
+
+    <!-- Sphinx's recognizer setup -->
+    <string name="setup_rec_in_setup">Setting up Sphinx\'s speech recognizer.\nThis operation may take up to a few minutes&#8230;</string>
+    <string name="setup_rec_failed">Failed to init Sphinx\'s speech recognizer</string>
+    <string name="setup_tts_engine">Setting up Google\'s TTS engine&#8230;</string>
+</resources>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:animateLayoutChanges="true">
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_frames"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+
+        app:constraint_referenced_ids="cl_text_recognition, cl_captioning, cl_depth_estimation,
+         cl_speech_recognition, cl_selfie, cl_pose_detection" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_text_recognition"
+        style="@style/FrameCommandButton"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="40dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btn_text_recognition"
+            style="@style/CommandButton"
+            app:icon="@drawable/ic_notes"
+
+            app:layout_constraintBottom_toTopOf="@+id/tv_text_recognition"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_text_recognition"
+            style="@style/CommandText"
+
+            android:text="Text recognition"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_text_recognition" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_captioning"
+        style="@style/FrameCommandButton"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btn_captioning"
+            style="@style/CommandButton"
+            app:icon="@drawable/ic_image"
+
+            app:layout_constraintBottom_toTopOf="@+id/tv_captioning"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_captioning"
+            style="@style/CommandText"
+
+            android:text="Captioning"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_captioning" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_depth_estimation"
+        style="@style/FrameCommandButton"
+        android:layout_marginStart="40dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/cl_pose_detection"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cl_captioning">
+
+        <Button
+            android:id="@+id/btn_depth_estimation"
+            style="@style/CommandButton"
+            app:icon="@drawable/ic_near_me"
+
+            app:layout_constraintBottom_toTopOf="@+id/tv_depth_estimation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_depth_estimation"
+            style="@style/CommandText"
+
+            android:text="Depth estimation"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_depth_estimation" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_speech_recognition"
+        style="@style/FrameCommandButton"
+        android:layout_marginEnd="40dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/cl_selfie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cl_text_recognition">
+
+        <Button
+            android:id="@+id/btn_speech_recognition"
+            style="@style/CommandButton"
+            app:icon="@drawable/ic_voice_over"
+
+            app:layout_constraintBottom_toTopOf="@+id/tv_speech_recognition"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_speech_recognition"
+            style="@style/CommandText"
+
+            android:text="Speech recognition"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_speech_recognition" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_selfie"
+        style="@style/FrameCommandButton"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="60dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/btn_selfie"
+            style="@style/CommandButton"
+            app:icon="@drawable/ic_camera"
+
+            app:layout_constraintBottom_toTopOf="@+id/tv_selfie"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_selfie"
+            style="@style/CommandText"
+
+            android:text="Take a selfie"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_selfie" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_pose_detection"
+        style="@style/FrameCommandButton"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="60dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btn_pose_detection"
+            style="@style/CommandButton"
+            app:icon="@drawable/ic_human_pose"
+
+            app:layout_constraintBottom_toTopOf="@+id/tv_pose_detection"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_pose_detection"
+            style="@style/CommandText"
+
+            android:text="Pose detection"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_pose_detection" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_setup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+
+        app:constraint_referenced_ids="pb, tv_setup, iv_wave" />
+
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_setup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+
+        android:text="@string/setup_rec_in_setup"
+        android:textAlignment="center"
+        android:lineSpacingExtra="4dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pb" />
+
+    <ImageView
+        android:id="@+id/iv_wave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:src="@drawable/sound_wave"
+        android:contentDescription="Acoustic sound wave"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_setup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

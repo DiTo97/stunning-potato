@@ -1,0 +1,5 @@
+include ':aars'
+rootProject.name='StunningPotato'
+
+// Include modules
+include ':vision', ':speech', ':base'

@@ -1,0 +1,5 @@
+<resources>
+    <!-- Permissions sanity-->
+    <string name="snack_permission_denied">%s permission denied</string>
+    <string name="snack_permission_never_ask_again">ML Kit services require the %s permission in order to %s.</string>
+</resources>

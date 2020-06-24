@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:keepScreenOn="true">
+
+    <it.unige.ai.vision.detector.vision.CameraPreview
+        android:id="@+id/camera_preview"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toStartOf="@+id/contain_bottom_menu"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <it.unige.ai.vision.detector.vision.lib.GraphicOverlay
+            android:id="@+id/graphic_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </it.unige.ai.vision.detector.vision.CameraPreview>
+
+    <FrameLayout
+        android:id="@+id/contain_bottom_menu"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/camera_preview"
+        android:background="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="351dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="#FFF"
+            app:cardCornerRadius="24dp">
+
+            <ToggleButton
+                android:id="@+id/ic_camera_facing"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/toggle_ic_flip_camera_style"
+                android:checked="false"
+                android:textOff=""
+                android:textOn="" /> <!-- Back camera as default -->
+
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

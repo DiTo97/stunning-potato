@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:keepScreenOn="true">
+
+    <it.unige.ai.vision.detection.vision.CameraPreview
+        android:id="@+id/camera_preview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/contain_bottom_menu"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <it.unige.ai.vision.detection.vision.lib.GraphicOverlay
+            android:id="@+id/graphic_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </it.unige.ai.vision.detection.vision.CameraPreview>
+
+    <FrameLayout
+        android:id="@+id/contain_bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/camera_preview"
+        android:background="#000"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="#FFF"
+            app:cardCornerRadius="24dp">
+
+            <ToggleButton
+                android:id="@+id/ic_camera_facing"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/toggle_ic_flip_camera_style"
+                android:textOff=""
+                android:textOn=""
+                android:checked="false" /> <!-- Back camera as default -->
+
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1048918984279",
+    "firebase_url": "https://ml-kit-detector.firebaseio.com",
+    "project_id": "ml-kit-detector",
+    "storage_bucket": "ml-kit-detector.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1048918984279:android:92912eff33384f96834512",
+        "android_client_info": {
+          "package_name": "it.unige.ai.vision"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1048918984279-m5k6pbkhfjp4pimbctju76kmetrbf5q9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "it.unige.ai.vision",
+            "certificate_hash": "dc7b605581d51e5b31247aefd5f5403bb25ad4f6"
+          }
+        },
+        {
+          "client_id": "1048918984279-iuma7coq68qsoroh484iqcm1mucq7gmg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbniSJwropOmJyG7RZwnVeEcl6A5Tfz5A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1048918984279-iuma7coq68qsoroh484iqcm1mucq7gmg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

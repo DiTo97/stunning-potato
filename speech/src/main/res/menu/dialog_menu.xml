@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/ic_repeat"
+        android:icon="@drawable/ic_replay"
+        android:title="Read description"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/ic_close"
+        android:icon="@drawable/ic_close"
+        android:title="Close"
+        app:showAsAction="always"/>
+</menu>

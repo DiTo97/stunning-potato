@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Images gallery -->
+    <dimen name="card_img_gallery_margin">4dp</dimen>
+    <dimen name="card_img_gallery_radius">8dp</dimen>
+    <dimen name="card_img_gallery_size">88dp</dimen>
+</resources>
