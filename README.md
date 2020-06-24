@@ -6,5 +6,5 @@ This project focuses on the development of tools (i.e., Android apps) to improve
 
 ## Submission structure
 
-- **`apk`** folder contains the downloadable APK file `StunningPotato.apk`
+- **`apk`** folder contains the downloadable APK file `StunningPotato.apk` (min API 26)
 - **`report`** folder contains the written PDF report
