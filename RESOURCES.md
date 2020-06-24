@@ -83,6 +83,6 @@ The next few lines may contain literally *anything*, ranging from proposed metho
 
 ### Familiar face recognition
 
+- [How robust is familiar face recognition? A repeat detection study of more than 1000 faces](https://www.researchgate.net/publication/325445147_How_robust_is_familiar_face_recognition_A_repeat_detection_study_of_more_than_1000_faces)
 - https://www.sciencedirect.com/science/article/pii/0925231293E0052F
 - https://www.tandfonline.com/doi/abs/10.1080/09658210902976969?journalCode=pmem20
-- https://www.researchgate.net/publication/325445147_How_robust_is_familiar_face_recognition_A_repeat_detection_study_of_more_than_1000_faces
