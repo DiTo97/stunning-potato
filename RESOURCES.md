@@ -13,6 +13,10 @@ Useful resources that link novelty machine learning algorithms from computationa
 - [Deep learning for Video captioning: A review](https://www.ijcai.org/Proceedings/2019/0877.pdf)
 
 - [Sequence to sequence S2VT – Video to text](http://www.cs.utexas.edu/users/ml/papers/venugopalan.iccv15.pdf)
+<br>Look for the repo within *Dropbox*
+
+- [Detailed sentence generation architecture for Image semantics description](#)
+<br>Look into within *Dropbox*
 
 ### Datasets
 
