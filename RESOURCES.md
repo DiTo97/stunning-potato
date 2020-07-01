@@ -2,6 +2,36 @@
 
 Useful resources that link novelty machine learning algorithms from computational vision (such as [YOLO](https://arxiv.org/pdf/1506.02640v5.pdf)-based) to the hardware capabilities of Android (or low-spec devices in general), in order to allow real-time processing of images captured by a (monocular) camera, through [**TensorFlow Lite**](https://www.tensorflow.org/lite) offerings.
 
+## Dense image/video captioning
+
+### Papers
+
+- [Automatic description generation from Images: A survey of Models, Datasets, and Evaluation measures](http://homepages.inf.ed.ac.uk/keller/publications/jair16.pdf)
+
+- [DenseCap](https://cs.stanford.edu/people/karpathy/densecap/)
+
+- [Deep learning for Video captioning: A review](https://www.ijcai.org/Proceedings/2019/0877.pdf)
+
+- [Sequence to sequence S2VT – Video to text](http://www.cs.utexas.edu/users/ml/papers/venugopalan.iccv15.pdf)
+
+### Datasets
+
+- [Visual Genome](https://visualgenome.org/)
+- [MS COCO](https://cocodataset.org/#home)
+- [IAPR TC-12](https://www.imageclef.org/photodata)
+
+### Metrics
+
+- [BLEU](https://en.wikipedia.org/wiki/BLEU)
+- [ROUGE-L](https://en.wikipedia.org/wiki/ROUGE_(metric))
+- [METEOR](https://en.wikipedia.org/wiki/METEOR)
+
+### Extra
+
+- [Parts-of-speech (POS) tagging](https://en.wikipedia.org/wiki/Part-of-speech_tagging)
+
+## Familiar face recognition (?)
+
 ## Pre-trained models
 
 - https://www.tensorflow.org/lite/models
