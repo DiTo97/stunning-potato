@@ -8,3 +8,7 @@ This project focuses on the development of tools (i.e., Android apps) to improve
 
 - **`apk`** folder contains the downloadable APK file `StunningPotato.apk` (min *API 26*)
 - **`report`** folder contains the written PDF report
+
+## Why "Stunning potato"?
+
+We were looking for a name that could convey true emotions to the user by means of thorough descriptions of the environment surrounding him at any given moment. It doesn’t really matter what a visually-impaired person may be looking at, neither noticeable or common. What does truly matter instead, is how vivid the idea that we can give him of the outer world is, to whom even a simple potato might be the most stunning thing ever.
