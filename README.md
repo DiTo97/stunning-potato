@@ -4,7 +4,7 @@ Stunning Potato is intended to be part of a bigger project on the Android platfo
 
 This project focuses on the development of tools (i.e., Android apps and AI models) to improve the social engagement of visually-impaired people with the external world.
 
-**Please note:** Due to time constraints we did not manage to plug the AI models into the app. Refer to their dedicated repositories to find out more about those:
+**Please note:** Due to time constraints we did not manage to plug the AI models into the app:
 - Dense image captioning: https://github.com/DiTo97/kwl-dense-captioning
 
 ## Submission structure
