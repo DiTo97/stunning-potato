@@ -7,7 +7,7 @@ This project focuses on the development of tools (i.e., Android apps and AI mode
 **Please note:** Due to time constraints we did not manage to plug the AI models into the app:
 - Dense image captioning: https://github.com/DiTo97/kwl-dense-captioning
 
-## Submission structure
+## Folder structure
 
 - **`apk`** folder contains the downloadable APK file `StunningPotato.apk` (min *API 26*)
 - **`report`** folder contains the written PDF report
